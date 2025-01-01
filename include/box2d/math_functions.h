@@ -636,8 +636,8 @@ B2_API void b2SetLengthUnitsPerMeter( float lengthUnits );
 /// Get the current length units per meter.
 B2_API float b2GetLengthUnitsPerMeter( void );
 
+#ifndef B2_DISABLE_CXX_OPERATORS
 /**@}*/
-
 /**
  * @defgroup math_cpp C++ Math
  * @brief Math operator overloads for C++
@@ -714,3 +714,4 @@ inline bool operator!=( b2Vec2 a, b2Vec2 b )
 #endif
 
 /**@}*/
+#endif
